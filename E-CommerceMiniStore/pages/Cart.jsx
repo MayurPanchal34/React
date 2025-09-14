@@ -23,7 +23,7 @@ export default function Cart() {
       ) : (
         cartItems.map((item) => <CartItem key={item.id} item={item} />)
       )}
-      <h3>Total: ${total}</h3>
+      <h3>Total: ₹{total}</h3>
       <button onClick={handlePlaceOrder} disabled={cartItems.length === 0}>
         Place Order
       </button>

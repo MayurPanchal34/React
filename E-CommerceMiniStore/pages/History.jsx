@@ -13,7 +13,7 @@ export default function History() {
         orders.map((order, index) => (
           <div key={index} className="order-card">
             <p>Date: {order.date}</p>
-            <p>Total: ${order.total}</p>
+            <p>Total: ₹{order.total}</p>
             <ul>
               {order.items.map((item) => (
                 <li key={item.id}>
